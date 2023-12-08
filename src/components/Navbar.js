@@ -4,7 +4,7 @@ import JoinImage from "../assets/Join.svg"
 
 const Navbar = () => {
     return (
-        <div className="w-full h-16 flex justify-between items-center mt-6 border-b-2">
+        <div className="w-full h-16 flex justify-between items-center mt-6 border-b">
             <div className='flex text-sm text-gray-400 w-4/6 gap-x-4 h-full items-center'>
                 <span className='text-black border-b-2 border-black h-full flex items-center'>All Posts(32)</span>
                 <span>Artical</span>
