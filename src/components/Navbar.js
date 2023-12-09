@@ -26,8 +26,8 @@ const Navbar = () => {
                 <span className="max-sm:hidden">Job</span>
             </div>
             <div className='flex gap-x-4 justify-center items-center '>
-                <button className="bg-gray-200 h-10 w-36 rounded-md flex items-center justify-evenly"><span className='max-md:hidden'>Write a Post</span> <span className='md:hidden'>Filter: All</span><IoMdArrowDropdown/></button>
-                <button className=" h-10 w-36 rounded-md text-white flex items-center justify-evenly bg-blue-500 max-md:hidden" onClick={() => {handleSignIn()}}>
+                <button className="bg-gray-200 hover:bg-[#CED4DA] h-10 w-36 rounded-md flex items-center justify-evenly"><span className='max-md:hidden'>Write a Post</span> <span className='md:hidden'>Filter: All</span><IoMdArrowDropdown/></button>
+                <button className=" h-10 w-36 rounded-md text-white flex items-center justify-evenly bg-[#2F6CE5] max-md:hidden hover:bg-[#339AF0]" onClick={() => {handleSignIn()}}>
                     <img src={JoinImage} alt="join img"/>
                         Join Group
                     </button>
