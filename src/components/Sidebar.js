@@ -4,7 +4,7 @@ import ExIcon from "../assets/ExIcon.svg";
 
 const Sidebar = () => {
     return (
-        <div className='flex flex-col w-96 gap-y-12'>
+        <div className='flex flex-col w-96 gap-y-12 max-md:hidden max-lg:w-72'>
             <div className="flex text-sm items-center justify-between border-b h-12">
                 <div className="flex gap-x-2 text-sm">
                     <img src={LocationIcon} alt="Location icon"/>

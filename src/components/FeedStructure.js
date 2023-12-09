@@ -47,7 +47,11 @@ const FeedStructure = ({FeedData}) => {
                                 <img src={ViewIcon} alt="View icon" />
                                 {FeedData.views} views
                             </div>
-                            <img src={ShareIcon} alt="share icon" />
+                            {/* <img src={ShareIcon} alt="share icon " /> */}
+                            <div className='flex gap-x-2 bg-gray-200 items-center justify-center h-10 px-3 rounded-md'>
+                                <img src={ShareIcon} alt="share icon"/>
+                                <span className='md:hidden'>Share</span>
+                            </div>
                         </div>
                     </div>
                 </div>
