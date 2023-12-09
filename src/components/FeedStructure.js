@@ -6,11 +6,11 @@ import LocationIcon from "../assets/LocationIcon.svg"
 
 const FeedStructure = ({FeedData}) => {
     return (
-        <div className='flex flex-col border rounded-md pb-4'>
+        <div className='flex flex-col border rounded-md pb-4 max-md:border-none max-md:shadow-xl'>
                 {FeedData.image ? <img src={FeedData.image} alt="Feed img 1" /> : null}
-                <div className="px-4 flex flex-col gap-y-4 mt-4">
+                <div className="px-6 flex flex-col gap-y-4 mt-4">
                     <span className='max-w-2xl'><img src={FeedData.type} alt="type img" /></span>
-                    <div className="flex items-start justify-between text-2xl font-semibold ">
+                    <div className="flex items-start justify-between text-2xl font-semibold max-lg:gap-x-12">
                         {FeedData.title}
                         <img src={DotIcon} alt="Dot icon" />
                     </div>
@@ -38,19 +38,18 @@ const FeedStructure = ({FeedData}) => {
                         null
                     }
                     <div className="flex items-center justify-between">
-                        <div className="flex items-center text-lg font-bold gap-x-6">
+                        <div className="flex items-center text-lg font-bold gap-x-6 max-md:gap-x-4">
                             <img src={FeedData.dp} alt="author img"/>
                             {FeedData.authorName}
                         </div>
                         <div className='flex items-center justify-between gap-x-10'>
-                            <div className='flex items-center gap-x-2'>
+                            <div className='flex items-center gap-x-2 max-md:hidden'>
                                 <img src={ViewIcon} alt="View icon" />
                                 {FeedData.views} views
                             </div>
-                            {/* <img src={ShareIcon} alt="share icon " /> */}
                             <div className='flex gap-x-2 bg-gray-200 items-center justify-center h-10 px-3 rounded-md'>
                                 <img src={ShareIcon} alt="share icon"/>
-                                <span className='md:hidden'>Share</span>
+                                <span className='md:hidden text-sm'>Share</span>
                             </div>
                         </div>
                     </div>
