@@ -6,7 +6,6 @@ const Dropdown = ({handleClose}) => {
     const [isSignInOpen, setIsSignInOpen] = useState(false);
 
     const handleSignIn = () => {
-        // handleClose();
         if(isSignInOpen){
             setIsSignInOpen(false);
         }

@@ -19,7 +19,10 @@ const SignIn = ({handleCloseSignIn}) => {
                         {!isLogin ? 
                         <div className='py-4 px-6 flex items-center justify-between max-md:justify-center gap-x-4'>
                             <div className='w-1/2 h-[26rem] max-md:h-full flex flex-col gap-y-4 max-md:w-[24rem] max-xxs:w-full'>
-                                <div className='font-semibold text-xl flex justify-start'>Create Account</div>
+                                <div className='font-semibold text-xl flex justify-start max-md:justify-between items-center'>
+                                    Create Account
+                                    <button className='text-white font-bold bg-black rounded-full text-base p-[1.5px] flex items-center justify-center md:hidden' onClick={handleCloseSignIn}><RxCross2/></button>
+                                </div>
                                 <div className='w-full flex flex-col gap-y-4 border'>
                                     <ul className='flex flex-col [&>*]:h-12'>
                                         <ul className='border-b bg-[#F7F8FA] w-full flex'>
@@ -54,7 +57,7 @@ const SignIn = ({handleCloseSignIn}) => {
                             </div>
                         </div>
                         :
-                        <LogIn setIsLogin={setIsLogin}/>
+                        <LogIn setIsLogin={setIsLogin} handleClose={handleCloseSignIn}/>
                         }
                     </div>   
                 </div>
