@@ -43,7 +43,7 @@ const SignIn = ({handleCloseSignIn}) => {
                                     <button className="w-full border h-10 rounded-sm gap-x-2 font-light text-sm flex justify-center items-center"><img src={GoogleLogo} alt="google logo"/> Sign up with Google</button>
                                 </div>
                                 <div className='text-xs flex justify-center items-center font-light md:hidden'>
-                                    <span className='w-2/3 text-center'>By signing up, you agree to our Terms & conditions, Privacy policy</span>
+                                    <div className='w-2/3 text-center'>By signing up, you agree to our Terms & conditions, Privacy policy</div>
                                 </div>
                             </div>
                             <div className='w-1/2 h-[26rem] flex flex-col gap-y-0 max-md:hidden'>
@@ -53,7 +53,7 @@ const SignIn = ({handleCloseSignIn}) => {
                                     </button>
                                 </div>
                                 <img src={SignInImage} alt="signIn img" className='w-[22rem]'/>
-                                <div className='text-xs flex justify-center items-center font-light'>By signing up, you agree to our Terms & conditions, Privacy policy</div>
+                                <div className='text-xs flex justify-center items-center font-light text-center'>By signing up, you agree to our Terms & conditions, Privacy policy</div>
                             </div>
                         </div>
                         :
